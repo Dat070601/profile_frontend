@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-evenly;
     padding-left: 50px;
-    position: fixed;
+    position: static;
     width: 100%;
 }
 .title{
@@ -45,8 +45,11 @@
     margin-left: 30px;
     color: #000;
 }
+/* .container-home{
+    padding-top: 50px;
+} */
 .image-home{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png");
+    opacity: 70%;
     background-size: cover;
     background-position: center;
     height: 100vh;
