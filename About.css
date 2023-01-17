@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .wrapper{
     display: block;
@@ -63,30 +64,19 @@
 }
 .text-title{
     position: absolute;
-    top: 50%;
-    left:50%;
+    top: 30%;
+    left: 70%;
     transform: translate(-50%, -50%);
     font-family: Courier,Helvetica,sans-serif;
     color: #EEEEEE;   
     z-index: 10; 
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
+    /* max-width: 50%; */
 }
 .info-myself {
     color: #BB0000;;
     overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing;
-    animation-duration: 1.5s;
-    animation-timing-function: steps(30, end);
-    animation-fill-mode: forwards;
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
+
 .image-home-background{
     display: flex;   
 }
@@ -101,4 +91,7 @@ a:visited {
 }
 a:active {
     text-decoration: none;
+}
+.text-info h2 span{
+    word-wrap: break-word;
 }

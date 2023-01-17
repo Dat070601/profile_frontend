@@ -63,30 +63,19 @@
 }
 .text-title{
     position: absolute;
-    top: 50%;
-    left:50%;
+    top: 30%;
+    left: 80%;
     transform: translate(-50%, -50%);
     font-family: Courier,Helvetica,sans-serif;
     color: #EEEEEE;   
     z-index: 10; 
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
+    /* max-width: 50%; */
 }
 .info-myself {
-    color: #BB0000;;
+    color: #BB0000;
     overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing;
-    animation-duration: 1.5s;
-    animation-timing-function: steps(30, end);
-    animation-fill-mode: forwards;
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
+
 .image-home-background{
     display: flex;   
 }
@@ -101,4 +90,34 @@ a:visited {
 }
 a:active {
     text-decoration: none;
+}
+.text-info h2 span{
+    word-wrap: break-word;
+}
+.skill li{
+    color: #BB0000;
+    height: 50px;
+    list-style: upper-roman;
+}
+.skill li{
+    position: relative;
+    color: #BB0000;
+    height: 50px;
+    list-style: upper-roman;
+}   
+.skill li:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.skill li::before{
+    content: " ";
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+}
+.skill li::before{
+    background: rgb(170, 207, 199);
+    transition: transform .3s ease;
 }

@@ -35,13 +35,47 @@
 // }
 
 // Star(5)
-
-let email = document.getElementById("emailAddress")
-let emailValue = document.getElementById("email_value")
-
-function getData() {
-    console.log(email.value)
-    emailValue.append(email.value)
-    
+var i = 0;
+var speed = 100; 
+var arr = ["Backend developer","world"]
+function typeWriter() {
+    let j =0;
+    if (i < arr[j].length) {
+    document.getElementById("info").innerHTML += arr[j].charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
 }
-console.log("Hello world!");
+    // if(i === arr[j].length)
+    // {
+    //     j += 1;
+    //     document.getElementById("info").innerHTML += arr[j].charAt(i);
+    //     i++;
+    //     setTimeout(typeWriter, speed);
+    // }
+    // if (i < txt.length) {
+    //     document.getElementById("info").innerHTML += txt.charAt(i);
+    //     i++;
+    //     setTimeout(typeWriter, speed);
+    // }
+    // if (i === txt.length) {
+    //     document.getElementById("info").innerHTML -= txt.charAt(i);
+    //     i--;
+    //     setTimeout(typeWriter, speed);
+    // }
+    // console.log(i);
+}
+
+window.onload = typeWriter;
+
+
+// let speed = 100;
+
+// let email = document.getElementById("emailAddress")
+// let emailValue = document.getElementById("email_value")
+
+// function getData() {
+//     console.log(email.value)
+//     emailValue.append(email.value)
+    
+// }
+// console.log("Hello world!");
